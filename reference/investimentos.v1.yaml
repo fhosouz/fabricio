@@ -19,7 +19,7 @@ paths:
         - schema:
             type: string
           in: query
-          name: id_cliente=123
+          name: cod_produto
     post:
       summary: ''
       operationId: post-investimentos-id_cliente-renda_fixa
@@ -45,7 +45,7 @@ paths:
 components:
   schemas:
     '123':
-      title: 123
+      title: '123'
       type: object
       x-examples:
         example-1: {}
