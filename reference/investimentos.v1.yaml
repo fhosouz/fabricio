@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  title: investimentos
+  version: '1.0'
+  description: Investimentos do cliente
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /renda_fixa:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers: {}
+      operationId: get-investimentos-id_cliente-renda_fixa
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: id_cliente=123
+    post:
+      summary: ''
+      operationId: post-investimentos-id_cliente-renda_fixa
+      responses:
+        '200':
+          description: OK
+      description: Post novo investimento do cliente
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                codigo_produto:
+                  type: string
+                nome_produto:
+                  type: string
+                valor_investido:
+                  type: string
+        description: ''
+    parameters: []
+components:
+  schemas:
+    '123':
+      title: 123
+      type: object
+      x-examples:
+        example-1: {}
+      description: ''
+      properties:
+        produtos:
+          type: object
+          properties:
+            cod_produto:
+              type: string
+            nome_produto:
+              type: string
+            valor_investido:
+              type: string
+            tipo:
+              type: string
